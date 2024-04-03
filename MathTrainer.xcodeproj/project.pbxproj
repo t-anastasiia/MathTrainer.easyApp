@@ -13,6 +13,7 @@
 		3110C1082BBAF6A3003DB0E1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3110C1072BBAF6A3003DB0E1 /* Base */; };
 		3110C10A2BBAF6A5003DB0E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3110C1092BBAF6A5003DB0E1 /* Assets.xcassets */; };
 		3110C10D2BBAF6A5003DB0E1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3110C10C2BBAF6A5003DB0E1 /* Base */; };
+		31CEE0BB2BBC534600F7E10C /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEE0BA2BBC534600F7E10C /* TrainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3110C1092BBAF6A5003DB0E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3110C10C2BBAF6A5003DB0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3110C10E2BBAF6A5003DB0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31CEE0BA2BBC534600F7E10C /* TrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				3110C1022BBAF6A3003DB0E1 /* SceneDelegate.swift */,
 				3110C1042BBAF6A3003DB0E1 /* ViewController.swift */,
 				3110C1062BBAF6A3003DB0E1 /* Main.storyboard */,
+				31CEE0BA2BBC534600F7E10C /* TrainViewController.swift */,
 				3110C1092BBAF6A5003DB0E1 /* Assets.xcassets */,
 				3110C10B2BBAF6A5003DB0E1 /* LaunchScreen.storyboard */,
 				3110C10E2BBAF6A5003DB0E1 /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3110C1052BBAF6A3003DB0E1 /* ViewController.swift in Sources */,
+				31CEE0BB2BBC534600F7E10C /* TrainViewController.swift in Sources */,
 				3110C1012BBAF6A3003DB0E1 /* AppDelegate.swift in Sources */,
 				3110C1032BBAF6A3003DB0E1 /* SceneDelegate.swift in Sources */,
 			);
