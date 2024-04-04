@@ -20,13 +20,13 @@ class ViewController: UIViewController
     override func viewDidLoad() 
     {
         super.viewDidLoad()
-        
         configureButtons()
     }
 
     
     // MARK: -IBOutlets
     @IBOutlet var buttonsCollection: [UIButton]!
+    @IBOutlet var labelsCollection: [UILabel]!
     
     // MARK: -Actions
     @IBAction func buttonsAction(_ sender: UIButton) 
@@ -37,19 +37,40 @@ class ViewController: UIViewController
     
     
     // MARK: -Properties
-    var count = 0
+    var countAdd = 0
     { didSet
         {
-            print("You earned \(count) points")
+            configureLabel(labelsCollection[0])
         }
+        
     }
-    private var selectedType: MathTypes = .add
+    var countSubtract = 0
+    { didSet
+        {
+            configureLabel(labelsCollection[1])
+        }
+        
+    }
+    var countMultiply = 0
+    { didSet
+        {
+            configureLabel(labelsCollection[2])
+        }
+        
+    }
+    var countDivide = 0
+    { didSet
+        {
+            configureLabel(labelsCollection[3])
+        }
+        
+    }
+    var selectedType: MathTypes = .add
     
     @IBAction func unwindAction(unwindSegue: UIStoryboardSegue) { }
     
-    
     // MARK: -Methods
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
          if let viewController = segue.destination as? TrainViewController
         {
@@ -68,6 +89,18 @@ class ViewController: UIViewController
         }
     }
     
-    
+    private func configureLabel(_ label: UILabel)
+    { print("Trying with \(label.tag)")
+        switch selectedType {
+            case .add:
+                label.text = String(countAdd)
+            case .subtract:
+                label.text = String(countSubtract)
+            case .multiply:
+                label.text = String(countMultiply)
+            case .divide:
+                label.text = String(countDivide)
+        }
+    }
 }
 

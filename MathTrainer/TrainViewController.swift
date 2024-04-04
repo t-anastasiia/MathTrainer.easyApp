@@ -138,7 +138,17 @@ final class TrainViewController: UIViewController
     {
          if let viewController = segue.destination as? ViewController
         {
-             viewController.count = self.count
+             switch type {
+                 case .add:
+                     viewController.countAdd += count
+                 case .subtract:
+                     viewController.countSubtract += count
+                 case .multiply:
+                     viewController.countMultiply += count
+                 case .divide:
+                     viewController.countDivide += count
+             }
+             
          }
     }
     
